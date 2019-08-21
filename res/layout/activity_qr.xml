@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gjs.opentable.QrActivity">
+
+
+    <TextView
+        android:text="Bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewbill"
+        android:textSize="25sp"
+        android:textColor="@color/bg_register" />
+
+    <TextView
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billlistview"
+        android:layout_marginRight="44dp"
+       android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textViewtotal"
+        android:textSize="20sp"
+        android:textColor="@color/bg_register" />
+
+    <TextView
+        android:text="totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewtotal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+      android:layout_marginLeft="20dp"
+        android:id="@+id/textViewtotalamount"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="Pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtotal"
+
+        android:layout_marginTop="26dp"
+
+        android:id="@+id/buttontotalpay"
+        android:textSize="30sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+
+        android:id="@+id/billlistview"
+        android:layout_below="@id/textviewbill"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"></ListView>
+
+    <TextView
+        android:text="Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewtotalamount"
+        android:layout_toRightOf="@+id/textviewbill"
+        android:layout_toEndOf="@+id/textviewbill"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textViewtotalquantity"
+        android:textSize="20sp" />
+
+</RelativeLayout>

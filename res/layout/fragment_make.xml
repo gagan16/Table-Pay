@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.gjs.finalproject.HomeFragment.MakeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+            <TextView
+                android:text="Table for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="33dp"
+                android:id="@+id/textView"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp" />
+
+            <TextView
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="47dp"
+                android:id="@+id/textView2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="55dp"
+                android:id="@+id/textView3"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignRight="@+id/editTextdate"
+                android:layout_alignEnd="@+id/editTextdate"
+                android:id="@+id/editTexttime" />
+
+            <Button
+                android:text="Make Reservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:id="@+id/buttonmakereservation"
+                android:textSize="18sp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editTextdate"
+                android:layout_above="@+id/textView3"
+                android:layout_alignLeft="@+id/spinner"
+                android:layout_alignStart="@+id/spinner" />
+
+        </RelativeLayout>
+    </ScrollView>

@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.gjs.finalproject.HomeFragment.AboutFragment"
+    android:layout_height="600dp">
+
+    <!-- TODO: Update blank fragment layout-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Rl1">
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView6"
+        android:textSize="18sp" />
+
+   <fragment
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/map"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+       tools:layout="@android:layout/preference_category" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewresAddress" />
+
+    <TextView
+        android:text="Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewresAddress"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:text="TextViewPhone"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/textViewresPhone"
+        android:layout_width="200dp" />
+
+    <TextView
+        android:text="Website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:text="TextViewWebsite"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_alignLeft="@+id/textViewresPhone"
+        android:layout_alignStart="@+id/textViewresPhone"
+        android:id="@+id/textViewresWebsite"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:text="Timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_alignRight="@+id/textView15"
+        android:layout_alignEnd="@+id/textView15"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView19" />
+
+    <TextView
+        android:text="TextViewtiming"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_alignLeft="@+id/textViewresWebsite"
+        android:layout_alignStart="@+id/textViewresWebsite"
+        android:id="@+id/textViewresTiming"
+        android:layout_width="match_parent" />
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/Rl2"
+        android:layout_below="@+id/Rl1">
+
+        <TextView
+            android:text="Reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/textView1"
+            android:textSize="18sp" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/textView1"
+            android:id="@+id/reviewlistview"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="15dp"
+            android:focusable="false"></ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>
