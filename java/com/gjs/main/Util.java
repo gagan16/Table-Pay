@@ -16,7 +16,7 @@ public class Util {
         return (networkInfo!=null && networkInfo.isConnected());
     }
     public static double latitude,longitide;
-    public static String API_KEY="AIzaSyDGtQbIzeOGRk0kGq3rCy3xAvo1xVNB304";
+    public static String API_KEY="your APi key here";
     public static String searchbox="Current Location";
     public static String resname;
     public static String tablename,photo;
